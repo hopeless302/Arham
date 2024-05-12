@@ -324,6 +324,10 @@ footer {
     .aboutus {
       flex-direction: column;
     }
+
+    #aboutImage{
+        display: none;
+    }
   
     .aboutusContent {
       width: 100%;
