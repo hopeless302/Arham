@@ -5,10 +5,9 @@
 }
 
 html,body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #333333;
     scroll-behavior: smooth;
-
 }
 
 
@@ -20,6 +19,21 @@ html,body {
     justify-content: space-between; /* Distribute items along the navbar */
     padding: 20px 20px; /* Added padding */
 }
+
+/* #sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+} */
 
 .logo {
     display: flex;
@@ -34,6 +48,9 @@ html,body {
 #logo {
     border-radius: 50%; /* Circular logo */
     margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #brand-name {
@@ -149,6 +166,7 @@ html,body {
     height: 100%;
     padding: 50px;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 .Services div{
@@ -199,6 +217,7 @@ footer {
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    justify-content: space-around;
 }
 
 .mainFooter {
@@ -214,16 +233,26 @@ footer {
 
 .contactinfo {
     text-align: left;
+    font-weight: 200;
+    margin-left: 50px;
     color: #fff; /* Change text color to white */
+}
+.contactinfo div {
+    margin-top: 10px;
 }
 
 .services {
     text-align: center;
+    font-weight: 200;
     color: #fff; /* Change text color to white */
+}
+.services div {
+    margin-top: 10px;
 }
 
 .followUs {
     text-align: right;
+    margin-right: 50px;
     color: #fff; /* Change text color to white */
 }
 
@@ -262,3 +291,62 @@ footer {
 .my-float {
     margin-top: 16px;
 }
+
+/* Responsive media queries */
+
+/* For screens smaller than 768px (tablets and mobile phones) */
+/* For screens smaller than 768px */
+@media(max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .frontDiv {
+      flex-direction: column;
+    }
+  
+    .img img {
+        display: none;
+    }
+  
+    .aboutus {
+      flex-direction: column;
+    }
+  
+    .aboutusContent {
+      width: 100%;
+    }
+  
+    .Services {
+      padding: 20px;
+    }
+  
+    .SwiperDiv .swiper {
+      width: 90vw;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  
+    .mainFooter {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactinfo, .services, .followUs {
+      margin: 20px 0;
+    }
+  }

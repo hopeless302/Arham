@@ -19,3 +19,14 @@ tl.from('.nav-links li', {
     duration: 0.5,
     stagger: 0.2,
 })
+
+/* Add a function to toggle mobile navigation */
+function toggleMobileNav() {
+  var nav = document.getElementById('navbar');
+  nav.classList.toggle('mobile-nav');
+}
+
+// JavaScript to toggle the hamburger menu
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
